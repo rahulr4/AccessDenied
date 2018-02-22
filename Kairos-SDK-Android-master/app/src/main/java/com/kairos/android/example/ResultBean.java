@@ -14,7 +14,7 @@ public class ResultBean {
         public TransactionBean transaction;
 
         public class CandidatesBean {
-            public int confidence;
+//            public double confidence;
             public String enrollment_timestamp, face_id, subject_id;
         }
 

@@ -131,9 +131,14 @@ public class MainActivity extends Activity implements KairosListener, View.OnCli
     @Override
     public void onSuccess(String response) {
         Log.d("KAIROS DEMO", response);
-        Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
         Gson gson = new Gson();
-//        gson.toJson(response, ResultBean.class);
+        ResultBean resultBean = gson.fromJson(response, ResultBean.class);
+        if (resultBean.images.size() != 0) {
+            String userName = resultBean.images.get(0).transaction.subject_id;
+            Toast.makeText(this, userName + " recognised successfully", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
