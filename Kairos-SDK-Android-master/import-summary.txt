@@ -1,0 +1,297 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .idea\
+* .idea\libraries\
+* .idea\libraries\KairosSDK.xml
+* .idea\libraries\KairosSDK_android_dev.xml
+* .idea\libraries\android_async_http_1_4_6.xml
+* .idea\uiDesigner.xml
+* Kairos-SDK-Android-master\
+* Kairos-SDK-Android-master\.idea\
+* Kairos-SDK-Android-master\.idea\misc.xml
+* Kairos-SDK-Android-master\.idea\workspace.xml
+* Kairos-SDK-Android-master\app\
+* Kairos-SDK-Android-master\app\build.gradle
+* Kairos-SDK-Android-master\app\libs\
+* Kairos-SDK-Android-master\app\libs\KairosSDK.jar
+* Kairos-SDK-Android-master\app\src\
+* Kairos-SDK-Android-master\app\src\main\
+* Kairos-SDK-Android-master\app\src\main\AndroidManifest.xml
+* Kairos-SDK-Android-master\app\src\main\java\
+* Kairos-SDK-Android-master\app\src\main\java\com\
+* Kairos-SDK-Android-master\app\src\main\java\com\kairos\
+* Kairos-SDK-Android-master\app\src\main\java\com\kairos\android\
+* Kairos-SDK-Android-master\app\src\main\java\com\kairos\android\example\
+* Kairos-SDK-Android-master\app\src\main\java\com\kairos\android\example\MyActivity.java
+* Kairos-SDK-Android-master\app\src\main\res\
+* Kairos-SDK-Android-master\app\src\main\res\drawable-hdpi\
+* Kairos-SDK-Android-master\app\src\main\res\drawable-hdpi\ic_launcher.png
+* Kairos-SDK-Android-master\app\src\main\res\drawable-ldpi\
+* Kairos-SDK-Android-master\app\src\main\res\drawable-ldpi\ic_launcher.png
+* Kairos-SDK-Android-master\app\src\main\res\drawable-mdpi\
+* Kairos-SDK-Android-master\app\src\main\res\drawable-mdpi\ic_launcher.png
+* Kairos-SDK-Android-master\app\src\main\res\drawable-mdpi\liz.jpg
+* Kairos-SDK-Android-master\app\src\main\res\drawable-xhdpi\
+* Kairos-SDK-Android-master\app\src\main\res\drawable-xhdpi\ic_launcher.png
+* Kairos-SDK-Android-master\app\src\main\res\layout\
+* Kairos-SDK-Android-master\app\src\main\res\layout\main.xml
+* Kairos-SDK-Android-master\app\src\main\res\values\
+* Kairos-SDK-Android-master\app\src\main\res\values\strings.xml
+* Kairos-SDK-Android-master\build.gradle
+* Kairos-SDK-Android-master\gradle\
+* Kairos-SDK-Android-master\gradle\wrapper\
+* Kairos-SDK-Android-master\gradle\wrapper\gradle-wrapper.jar
+* Kairos-SDK-Android-master\gradle\wrapper\gradle-wrapper.properties
+* Kairos-SDK-Android-master\gradlew
+* Kairos-SDK-Android-master\gradlew.bat
+* Kairos-SDK-Android-master\local.properties
+* Kairos-SDK-Android-master\settings.gradle
+* KairosSDKsrc\
+* KairosSDKsrc\.gradle\
+* KairosSDKsrc\.gradle\2.14.1\
+* KairosSDKsrc\.gradle\2.14.1\taskArtifacts\
+* KairosSDKsrc\.gradle\2.14.1\taskArtifacts\cache.properties
+* KairosSDKsrc\.gradle\2.14.1\taskArtifacts\cache.properties.lock
+* KairosSDKsrc\.gradle\2.14.1\taskArtifacts\fileHashes.bin
+* KairosSDKsrc\.gradle\2.14.1\taskArtifacts\fileSnapshots.bin
+* KairosSDKsrc\.gradle\2.14.1\taskArtifacts\fileSnapshotsToTreeSnapshotsIndex.bin
+* KairosSDKsrc\.gradle\2.14.1\taskArtifacts\taskArtifacts.bin
+* KairosSDKsrc\.gradle\2.14.1\tasks\
+* KairosSDKsrc\.gradle\2.14.1\tasks\_app_compileDebugJavaWithJavac\
+* KairosSDKsrc\.gradle\2.14.1\tasks\_app_compileDebugJavaWithJavac\localClassSetAnalysis\
+* KairosSDKsrc\.gradle\2.14.1\tasks\_app_compileDebugJavaWithJavac\localClassSetAnalysis\localClassSetAnalysis.bin
+* KairosSDKsrc\.gradle\2.14.1\tasks\_app_compileDebugJavaWithJavac\localClassSetAnalysis\localClassSetAnalysis.lock
+* KairosSDKsrc\.gradle\2.14.1\tasks\_app_compileDebugJavaWithJavac\localJarClasspathSnapshot\
+* KairosSDKsrc\.gradle\2.14.1\tasks\_app_compileDebugJavaWithJavac\localJarClasspathSnapshot\localJarClasspathSnapshot.bin
+* KairosSDKsrc\.gradle\2.14.1\tasks\_app_compileDebugJavaWithJavac\localJarClasspathSnapshot\localJarClasspathSnapshot.lock
+* KairosSDKsrc\.idea\
+* KairosSDKsrc\.idea\gradle.xml
+* KairosSDKsrc\.idea\libraries\
+* KairosSDKsrc\.idea\libraries\__local_jars___E__OfficeData_Projects_Kairos_SDK_Android_master_KairosSDKsrc_app_libs_android_async_http_1_4_6_jar_unspecified_jar.xml
+* KairosSDKsrc\.idea\misc.xml
+* KairosSDKsrc\.idea\modules.xml
+* KairosSDKsrc\.idea\runConfigurations.xml
+* KairosSDKsrc\.idea\workspace.xml
+* KairosSDKsrc\KairosSDKsrc.iml
+* KairosSDKsrc\app\
+* KairosSDKsrc\app\app.iml
+* KairosSDKsrc\app\build.gradle
+* KairosSDKsrc\app\build\
+* KairosSDKsrc\app\build\generated\
+* KairosSDKsrc\app\build\generated\source\
+* KairosSDKsrc\app\build\generated\source\buildConfig\
+* KairosSDKsrc\app\build\generated\source\buildConfig\debug\
+* KairosSDKsrc\app\build\generated\source\buildConfig\debug\com\
+* KairosSDKsrc\app\build\generated\source\buildConfig\debug\com\kairos\
+* KairosSDKsrc\app\build\generated\source\buildConfig\debug\com\kairos\BuildConfig.java
+* KairosSDKsrc\app\build\generated\source\r\
+* KairosSDKsrc\app\build\generated\source\r\debug\
+* KairosSDKsrc\app\build\generated\source\r\debug\com\
+* KairosSDKsrc\app\build\generated\source\r\debug\com\kairos\
+* KairosSDKsrc\app\build\generated\source\r\debug\com\kairos\R.java
+* KairosSDKsrc\app\build\intermediates\
+* KairosSDKsrc\app\build\intermediates\bundles\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\AndroidManifest.xml
+* KairosSDKsrc\app\build\intermediates\bundles\debug\R.txt
+* KairosSDKsrc\app\build\intermediates\bundles\debug\classes.jar
+* KairosSDKsrc\app\build\intermediates\bundles\debug\libs\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\libs\android-async-http-1.4.6.jar
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-hdpi-v4\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-hdpi-v4\ic_launcher.png
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-ldpi-v4\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-ldpi-v4\ic_launcher.png
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-mdpi-v4\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-mdpi-v4\ic_launcher.png
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\drawable-xhdpi-v4\ic_launcher.png
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\layout\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\layout\main.xml
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\values\
+* KairosSDKsrc\app\build\intermediates\bundles\debug\res\values\values.xml
+* KairosSDKsrc\app\build\intermediates\classes\
+* KairosSDKsrc\app\build\intermediates\classes\debug\
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\BuildConfig.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$1.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$10.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$2.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$3.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$4.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$5.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$6.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$7.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$8.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos$9.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\Kairos.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\KairosListener.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\MainActivity.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\R$attr.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\R$drawable.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\R$layout.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\R$string.class
+* KairosSDKsrc\app\build\intermediates\classes\debug\com\kairos\R.class
+* KairosSDKsrc\app\build\intermediates\incremental-safeguard\
+* KairosSDKsrc\app\build\intermediates\incremental-safeguard\debug\
+* KairosSDKsrc\app\build\intermediates\incremental-safeguard\debug\tag.txt
+* KairosSDKsrc\app\build\intermediates\incremental\
+* KairosSDKsrc\app\build\intermediates\incremental\compileDebugAidl\
+* KairosSDKsrc\app\build\intermediates\incremental\compileDebugAidl\dependency.store
+* KairosSDKsrc\app\build\intermediates\incremental\mergeDebugAssets\
+* KairosSDKsrc\app\build\intermediates\incremental\mergeDebugAssets\merger.xml
+* KairosSDKsrc\app\build\intermediates\incremental\mergeDebugJniLibFolders\
+* KairosSDKsrc\app\build\intermediates\incremental\mergeDebugJniLibFolders\merger.xml
+* KairosSDKsrc\app\build\intermediates\incremental\mergeDebugShaders\
+* KairosSDKsrc\app\build\intermediates\incremental\mergeDebugShaders\merger.xml
+* KairosSDKsrc\app\build\intermediates\incremental\packageDebugResources\
+* KairosSDKsrc\app\build\intermediates\incremental\packageDebugResources\compile-file-map.properties
+* KairosSDKsrc\app\build\intermediates\incremental\packageDebugResources\merged.dir\
+* KairosSDKsrc\app\build\intermediates\incremental\packageDebugResources\merged.dir\values\
+* KairosSDKsrc\app\build\intermediates\incremental\packageDebugResources\merged.dir\values\values.xml
+* KairosSDKsrc\app\build\intermediates\incremental\packageDebugResources\merger.xml
+* KairosSDKsrc\app\build\intermediates\manifests\
+* KairosSDKsrc\app\build\intermediates\manifests\aapt\
+* KairosSDKsrc\app\build\intermediates\manifests\aapt\debug\
+* KairosSDKsrc\app\build\intermediates\manifests\aapt\debug\AndroidManifest.xml
+* KairosSDKsrc\app\build\outputs\
+* KairosSDKsrc\app\build\outputs\aar\
+* KairosSDKsrc\app\build\outputs\aar\app-debug.aar
+* KairosSDKsrc\app\build\tmp\
+* KairosSDKsrc\app\build\tmp\expandedArchives\
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AssertUtils.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpClient$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpClient$2.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpClient$3.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpClient$4.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpClient$InflatingEntity.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpClient.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpRequest.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpResponseHandler$ResponderHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\AsyncHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\Base64$Coder.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\Base64$Decoder.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\Base64$Encoder.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\Base64.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\Base64DataException.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\Base64OutputStream.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BaseJsonHttpResponseHandler$1$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BaseJsonHttpResponseHandler$1$2.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BaseJsonHttpResponseHandler$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BaseJsonHttpResponseHandler$2$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BaseJsonHttpResponseHandler$2$2.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BaseJsonHttpResponseHandler$2.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BaseJsonHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BinaryHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\BuildConfig.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\DataAsyncHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\FileAsyncHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonHttpResponseHandler$1$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonHttpResponseHandler$1$2.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonHttpResponseHandler$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonHttpResponseHandler$2$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonHttpResponseHandler$2$2.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonHttpResponseHandler$2.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonStreamerEntity.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\JsonValueInterface.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\MyRedirectHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\MySSLSocketFactory$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\MySSLSocketFactory.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\PersistentCookieStore.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\PreemtiveAuthorizationHttpRequestInterceptor.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\RangeFileAsyncHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\RequestHandle.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\RequestParams$1.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\RequestParams$FileWrapper.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\RequestParams$StreamWrapper.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\RequestParams.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\ResponseHandlerInterface.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\RetryHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\SaxAsyncHttpResponseHandler.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\SerializableCookie.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\SimpleMultipartEntity$FilePart.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\SimpleMultipartEntity.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\SyncHttpClient.class
+* KairosSDKsrc\app\build\tmp\expandedArchives\android-async-http-1.4.6.jar_5wmglqb8g8t30p3v8hfo6w6v2\com\loopj\android\http\TextHttpResponseHandler.class
+* KairosSDKsrc\app\libs\
+* KairosSDKsrc\app\libs\android-async-http-1.4.6.jar
+* KairosSDKsrc\app\src\
+* KairosSDKsrc\app\src\main\
+* KairosSDKsrc\app\src\main\AndroidManifest.xml
+* KairosSDKsrc\app\src\main\java\
+* KairosSDKsrc\app\src\main\java\com\
+* KairosSDKsrc\app\src\main\java\com\kairos\
+* KairosSDKsrc\app\src\main\java\com\kairos\Kairos.java
+* KairosSDKsrc\app\src\main\java\com\kairos\KairosListener.java
+* KairosSDKsrc\app\src\main\java\com\kairos\MainActivity.java
+* KairosSDKsrc\app\src\main\res\
+* KairosSDKsrc\app\src\main\res\drawable-hdpi\
+* KairosSDKsrc\app\src\main\res\drawable-hdpi\ic_launcher.png
+* KairosSDKsrc\app\src\main\res\drawable-ldpi\
+* KairosSDKsrc\app\src\main\res\drawable-ldpi\ic_launcher.png
+* KairosSDKsrc\app\src\main\res\drawable-mdpi\
+* KairosSDKsrc\app\src\main\res\drawable-mdpi\ic_launcher.png
+* KairosSDKsrc\app\src\main\res\drawable-xhdpi\
+* KairosSDKsrc\app\src\main\res\drawable-xhdpi\ic_launcher.png
+* KairosSDKsrc\app\src\main\res\layout\
+* KairosSDKsrc\app\src\main\res\layout\main.xml
+* KairosSDKsrc\app\src\main\res\values\
+* KairosSDKsrc\app\src\main\res\values\strings.xml
+* KairosSDKsrc\build.gradle
+* KairosSDKsrc\build\
+* KairosSDKsrc\build\generated\
+* KairosSDKsrc\build\generated\mockable-android-19.jar
+* KairosSDKsrc\gradle\
+* KairosSDKsrc\gradle\wrapper\
+* KairosSDKsrc\gradle\wrapper\gradle-wrapper.jar
+* KairosSDKsrc\gradle\wrapper\gradle-wrapper.properties
+* KairosSDKsrc\gradlew
+* KairosSDKsrc\gradlew.bat
+* KairosSDKsrc\import-summary.txt
+* KairosSDKsrc\local.properties
+* KairosSDKsrc\settings.gradle
+* LICENSE
+* README.md
+* ant.properties
+* build.xml
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* libs\KairosSDK.jar => app\libs\KairosSDK.jar
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

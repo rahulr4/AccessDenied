@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KairosExample</string>
+    <string name="image_provider">com.kairos.android.example.provider</string>
+    <string name="gallery_name">Test_Face_Images</string>
+</resources>
