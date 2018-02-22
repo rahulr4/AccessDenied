@@ -39,9 +39,8 @@ public class EnrollmentActivity extends Activity implements View.OnClickListener
     private MediaFactory.MediaBuilder mediaBuilder;
     private MediaFactory mediaFactory;
     private ProgressBar mProgressBar;
-    private boolean isCurrentImageProcessed = true;
     private ImageView mImageView1, mImageView2, mImageView3, mImageView4, mImageView5, mImageView6;
-    private int pos = -1;
+    private int pos = -1, currentIndex = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -84,42 +83,34 @@ public class EnrollmentActivity extends Activity implements View.OnClickListener
         switch (view.getId()) {
             case R.id.enroll_tv:
                 if (validArguments()) {
-                    for (int i = 0; i < imageList.size(); i++) {
-                        if (isCurrentImageProcessed) {
-                            enrollImage(imageList.get(i));
-                        }
-                        isCurrentImageProcessed = false;
+                    mProgressBar.setVisibility(View.VISIBLE);
+                    if (currentIndex != imageList.size()) {
+                        enrollImage(imageList.get(currentIndex));
                     }
                 }
                 break;
             case R.id.image_view_1:
                 pos = 1;
-                mProgressBar.setVisibility(View.VISIBLE);
                 openCamera();
                 break;
             case R.id.image_view_2:
                 pos = 2;
-                mProgressBar.setVisibility(View.VISIBLE);
                 openCamera();
                 break;
             case R.id.image_view_3:
                 pos = 3;
-                mProgressBar.setVisibility(View.VISIBLE);
                 openCamera();
                 break;
             case R.id.image_view_4:
                 pos = 4;
-                mProgressBar.setVisibility(View.VISIBLE);
                 openCamera();
                 break;
             case R.id.image_view_5:
                 pos = 5;
-                mProgressBar.setVisibility(View.VISIBLE);
                 openCamera();
                 break;
             case R.id.image_view_6:
                 pos = 6;
-                mProgressBar.setVisibility(View.VISIBLE);
                 openCamera();
                 break;
         }
@@ -154,8 +145,12 @@ public class EnrollmentActivity extends Activity implements View.OnClickListener
 
     @Override
     public void onSuccess(String response) {
-        isCurrentImageProcessed = true;
         mProgressBar.setVisibility(View.GONE);
+        currentIndex = currentIndex + 1;
+        if (currentIndex != imageList.size()) {
+            mProgressBar.setVisibility(View.VISIBLE);
+            enrollImage(imageList.get(currentIndex));
+        }
         Log.d("KAIROS DEMO", response);
         Gson gson = new Gson();
         ResultBean resultBean = gson.fromJson(response, ResultBean.class);
@@ -199,7 +194,6 @@ public class EnrollmentActivity extends Activity implements View.OnClickListener
             } else if (pos == 6) {
                 loadImageToView(pathArrayList.get(0), mImageView6);
             }
-//            enrollImage(pathArrayList.get(0));
         }
 
     }
