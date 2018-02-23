@@ -12,18 +12,11 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.kairos.Kairos;
 import com.kairos.KairosListener;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.Base64;
 import com.rahul.media.main.MediaFactory;
 import com.rahul.media.model.Define;
 
-import org.apache.http.Header;
-import org.apache.http.entity.StringEntity;
 import org.json.JSONException;
-import org.json.JSONObject;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -58,9 +51,7 @@ public class MainActivity extends Activity implements KairosListener, View.OnCli
         Define.MEDIA_PROVIDER = getString(R.string.image_provider);
         findViewById(R.id.image_button).setOnClickListener(this);
         findViewById(R.id.recognise_button).setOnClickListener(this);
-        findViewById(R.id.view_subject_button).setOnClickListener(this);
-        findViewById(R.id.see_emotion_button).setOnClickListener(this);
-        findViewById(R.id.delete_gallery_button).setOnClickListener(this);
+        findViewById(R.id.mark_attendance_button).setOnClickListener(this);
 
         getAllGallery();
 //        Define.ACTIONBAR_COLOR = getResources().getColor(R.color.blue_03A9F4);
@@ -162,12 +153,8 @@ public class MainActivity extends Activity implements KairosListener, View.OnCli
         ArrayList<String> pathArrayList = mediaFactory.onActivityResult(requestCode, resultCode, data);
         if (pathArrayList.size() != 0) {
             enrolledImage = pathArrayList.get(0);
-            if (isForEmotion) {
-                checkEmotion(enrolledImage);
-            } else if (isRecogniseImage) {
+            if (isRecogniseImage) {
                 getImage(getBitmap(enrolledImage));
-            } else if (isForEnroll) {
-                enrollImage(enrolledImage);
             }
         }
 
@@ -177,23 +164,24 @@ public class MainActivity extends Activity implements KairosListener, View.OnCli
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.image_button:
-                isForEnroll = true;
-                openCamera();
+                startActivity(new Intent(this, EnrollmentActivity.class));
                 break;
             case R.id.recognise_button:
                 isRecogniseImage = true;
                 openCamera();
                 break;
-            case R.id.view_subject_button:
-                getAllSubjects();
+            case R.id.mark_attendance_button:
                 break;
-            case R.id.see_emotion_button:
-                isForEmotion = true;
-                openCamera();
-                break;
-            case R.id.delete_gallery_button:
-                deleteGallery();
-                break;
+        }
+    }
+
+    private void detectEmotion(String enrolledImage) {
+        try {
+            kairos.detect(getBitmap(enrolledImage), null, null, this);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
         }
     }
 
@@ -227,46 +215,6 @@ public class MainActivity extends Activity implements KairosListener, View.OnCli
         });
 
     }
-
-    public void emotion(Bitmap image, final KairosListener callback) throws JSONException, UnsupportedEncodingException {
-        AsyncHttpClient client = new AsyncHttpClient();
-        AsyncHttpResponseHandler responseHandler = new AsyncHttpResponseHandler() {
-            public void onStart() {
-            }
-
-            public void onSuccess(int statusCode, Header[] headers, byte[] response) {
-                String responseString = new String(response);
-                callback.onSuccess(responseString);
-            }
-
-            public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
-                if (errorResponse != null) {
-                    String responseString = new String(errorResponse);
-                    callback.onFail(responseString);
-                }
-
-            }
-
-            public void onRetry(int retryNo) {
-            }
-        };
-        JSONObject jsonParams = new JSONObject();
-        jsonParams.put("source", this.base64FromBitmap(image));
-
-        StringEntity entity = new StringEntity(jsonParams.toString());
-        client.addHeader("app_id", "c7d15241");
-        client.addHeader("app_key", "fd3287889f836397be1857dd4d0adb11");
-        client.post(this, "http://api.kairos.com/v2/media", entity, "application/json", responseHandler);
-    }
-
-    protected String base64FromBitmap(Bitmap image) {
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        image.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-        byte[] byteArray = byteArrayOutputStream.toByteArray();
-        String encoded = Base64.encodeToString(byteArray, 0);
-        return encoded;
-    }
-
 
     private Bitmap getBitmap(String enrolledImage) {
         File image = new File(enrolledImage);

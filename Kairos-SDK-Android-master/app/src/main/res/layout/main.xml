@@ -23,31 +23,14 @@
         android:text="Recognize" />
 
     <Button
-        android:id="@+id/view_subject_button"
+        android:id="@+id/mark_attendance_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:letterSpacing="0.5"
-        android:text="View Subjects" />
+        android:text="Mark Attendance" />
 
-    <Button
-        android:id="@+id/see_emotion_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:letterSpacing="0.5"
-        android:text="Check Emotion" />
-
-    <Button
-        android:id="@+id/delete_gallery_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:letterSpacing="0.5"
-        android:text="Delete Gallery" />
 
 </LinearLayout>
 

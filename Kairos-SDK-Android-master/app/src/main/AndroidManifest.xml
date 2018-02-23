@@ -14,14 +14,14 @@
         android:theme="@style/AppTheme"
         tools:replace="android:theme">
         <activity
-            android:name="EnrollmentActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<activity android:name=".EnrollmentActivity" />-->
+        <activity android:name=".EnrollmentActivity" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
