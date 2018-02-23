@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.kairos.Kairos;
 import com.kairos.KairosListener;
+import com.kairos.android.example.facetracker.FaceTrackerActivity;
 import com.rahul.media.main.MediaFactory;
 import com.rahul.media.model.Define;
 
@@ -164,7 +165,7 @@ public class MainActivity extends Activity implements KairosListener, View.OnCli
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.image_button:
-                startActivity(new Intent(this, EnrollmentActivity.class));
+                startActivity(new Intent(this, FaceTrackerActivity.class));
                 break;
             case R.id.recognise_button:
                 isRecogniseImage = true;
