@@ -40,7 +40,7 @@ public class EnrollmentActivity extends Activity implements View.OnClickListener
     private MediaFactory mediaFactory;
     private ProgressBar mProgressBar;
     private ImageView mImageView1, mImageView2, mImageView3, mImageView4, mImageView5, mImageView6;
-    private int pos = -1, currentIndex = 0;
+    private int clickedPosition = -1, currentIndex = 0;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -90,27 +90,27 @@ public class EnrollmentActivity extends Activity implements View.OnClickListener
                 }
                 break;
             case R.id.image_view_1:
-                pos = 1;
+                clickedPosition = 1;
                 openCamera();
                 break;
             case R.id.image_view_2:
-                pos = 2;
+                clickedPosition = 2;
                 openCamera();
                 break;
             case R.id.image_view_3:
-                pos = 3;
+                clickedPosition = 3;
                 openCamera();
                 break;
             case R.id.image_view_4:
-                pos = 4;
+                clickedPosition = 4;
                 openCamera();
                 break;
             case R.id.image_view_5:
-                pos = 5;
+                clickedPosition = 5;
                 openCamera();
                 break;
             case R.id.image_view_6:
-                pos = 6;
+                clickedPosition = 6;
                 openCamera();
                 break;
         }
@@ -181,17 +181,17 @@ public class EnrollmentActivity extends Activity implements View.OnClickListener
         ArrayList<String> pathArrayList = mediaFactory.onActivityResult(requestCode, resultCode, data);
         if (pathArrayList.size() != 0) {
             imageList.add(pathArrayList.get(0));
-            if (pos == 1) {
+            if (clickedPosition == 1) {
                 loadImageToView(pathArrayList.get(0), mImageView1);
-            } else if (pos == 2) {
+            } else if (clickedPosition == 2) {
                 loadImageToView(pathArrayList.get(0), mImageView2);
-            } else if (pos == 3) {
+            } else if (clickedPosition == 3) {
                 loadImageToView(pathArrayList.get(0), mImageView3);
-            } else if (pos == 4) {
+            } else if (clickedPosition == 4) {
                 loadImageToView(pathArrayList.get(0), mImageView4);
-            } else if (pos == 5) {
+            } else if (clickedPosition == 5) {
                 loadImageToView(pathArrayList.get(0), mImageView5);
-            } else if (pos == 6) {
+            } else if (clickedPosition == 6) {
                 loadImageToView(pathArrayList.get(0), mImageView6);
             }
         }
